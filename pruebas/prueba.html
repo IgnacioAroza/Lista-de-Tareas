@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Tareas</title>
+	<link rel="stylesheet" href="./prueba.css">
+</head>
+<body>
+	<nav>
+		<h1>Tareas</h1>
+	</nav>
+	<main>
+		<section>
+			<h2>Agregar tarea</h2>
+			<form>
+				<label for="titulo">Título:</label>
+				<input type="text" id="titulo" name="titulo" required>
+				<label for="descripcion">Descripción:</label>
+				<textarea id="descripcion" name="descripcion"></textarea>
+				<label for="estado">Estado:</label>
+				<select id="estado" name="estado">
+					<option value="pendiente">Pendiente</option>
+					<option value="proceso">En proceso</option>
+					<option value="hecho">Hecho</option>
+				</select>
+                <div class="btn">
+				    <button type="submit">Agregar</button>
+                </div>
+			</form>
+		</section>
+		<section>
+			<h2>Tareas</h2>
+			<ul id="tareas">
+				<!-- Las tareas se agregan dinámicamente con JavaScript -->
+			</ul>
+		</section>
+	</main>
+	<script src="./prueba.js"></script>
+</body>
+</html>
